@@ -8,17 +8,14 @@ public class Day {
     private String mCity;
     private String mTemperature;
     private String mDescription;
+    private String mIcon;
 
-
-
-    private String mImageUrl;
-
-    public Day(String city, String temperature, String description, String imageUrl) {
+    public Day(String city, String temperature, String description, String icon) {
         super();
         mCity = city;
         mTemperature = temperature;
         mDescription = description;
-        mImageUrl = imageUrl;
+        mIcon = icon;
     }
 
     public String getDay() {
@@ -46,10 +43,11 @@ public class Day {
     }
 
 
-    public String getmImageUrl() {
-        return mImageUrl;
+    public String getmIcon() {
+        return mIcon;
     }
-    public void setmImageUrl(String mImageUrl) {
-        this.mImageUrl = mImageUrl;
+
+    public void setmIcon(String mIcon) {
+        this.mIcon = mIcon;
     }
 }
