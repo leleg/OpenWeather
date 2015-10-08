@@ -147,10 +147,12 @@ public class WeatherFragment extends ListFragment {
 
         ArrayList<Day> items = new ArrayList<Day>();
         for (int i = 1; i < 14; i++) {
+            String icon = String.format("",weatherIcon);
             String city = String.format("",cityField);
             String temp = String.format("",temperature);
             String desc = String.format("",description);
-            Day day = new Day(city, temp, desc);
+
+            Day day = new Day(icon, city, temp, desc);
             items.add(day);
         }
 
